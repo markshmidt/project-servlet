@@ -40,6 +40,13 @@ buttons to restart
         <button type="submit">Start Again</button>
     </form>
 </c:if>
+<c:if test="${draw}">
+    <h1>IT'S A DRAW</h1>
+    <br>
+    <form action="/restart" method="post">
+        <button type="submit">Start Again</button>
+    </form>
+</c:if>
 
 <script>
     //sending post to server
